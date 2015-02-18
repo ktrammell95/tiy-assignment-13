@@ -107,7 +107,17 @@ console.assert(cat.growl() === "meow");
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
+var KeepSecret = (function() {
 
+  function KeepSecret(secret) {
+    var mySecret = secret;
+    this.squeal = function() {
+      return secret;
+    };
+  }
+
+  return KeepSecret;
+})();
 
 // -- ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ -- //
 
